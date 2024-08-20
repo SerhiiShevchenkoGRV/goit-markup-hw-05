@@ -625,6 +625,9 @@ header {
   padding: 8px 16px;
   outline: none;
   color: #ffffff;
+  font-size: 12px;
+  line-height: 2;
+   letter-spacing: 0.04em;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -642,12 +645,15 @@ ribe-input::placeholder {
 }
 
 .sbscr-btn {
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  min-width: 165px;
 
   background-color: #4d5ae5;
   border-radius: 4px;
@@ -669,6 +675,7 @@ ribe-input::placeholder {
 
 .sbscr-icon {
   fill: #fff;
+  margin-left: 16px;
 }
 
 /* #endregion Footer */
@@ -918,6 +925,7 @@ ribe-input::placeholder {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+   width: 24px;
 
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
