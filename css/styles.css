@@ -925,14 +925,13 @@ ribe-input::placeholder {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-   width: 24px;
-
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
+  width: 24px;
   border: none;
   align-self: center;
 
