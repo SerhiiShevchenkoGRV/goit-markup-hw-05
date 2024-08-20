@@ -735,7 +735,7 @@ ribe-input::placeholder {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #e7e9fc;
-  min-width: 165px;
+  width: 24px;
   height: 24px;
   line-height: 0;
   padding: 0;
@@ -931,7 +931,6 @@ ribe-input::placeholder {
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
-  width: 24px;
   border: none;
   align-self: center;
 
