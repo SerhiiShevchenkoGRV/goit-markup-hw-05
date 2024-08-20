@@ -684,8 +684,9 @@ ribe-input::placeholder {
   background-color: rgba(46, 47, 66, 0.4);
   visibility: hidden;
   pointer-events: none;
-  transition: visibility 300ms linear, opacity 300ms linear,
-    pointer-events 300ms linear;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -698,6 +699,10 @@ ribe-input::placeholder {
   min-height: 584px;
   width: 408px;
   padding: 72px 24px 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -717,7 +722,7 @@ ribe-input::placeholder {
   top: 24px;
   right: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #e7e9fc;
   width: 24px;
   height: 24px;
@@ -733,6 +738,8 @@ ribe-input::placeholder {
 .cross-icon {
   color: currentColor;
   fill: #2e2f42;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cross-btn:hover,
@@ -768,6 +775,7 @@ ribe-input::placeholder {
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
+  line-height: 1.17;
 }
 
 .modal-cont-input {
@@ -780,7 +788,8 @@ ribe-input::placeholder {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
-  outline: none;
+  background-color: transparent;
+  outline: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -792,7 +801,7 @@ ribe-input::placeholder {
 .modal-icon {
   position: absolute;
   top: 50%;
-  left: 19px;
+  left: 16px;
   transform: translateY(-50%);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -808,7 +817,7 @@ ribe-input::placeholder {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
 }
 
 .modal-form-label-comment {
@@ -828,7 +837,11 @@ ribe-input::placeholder {
   height: 120px;
   padding: 8px 16px;
   resize: none;
-  outline: none;
+  outline: transparent;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -858,6 +871,11 @@ ribe-input::placeholder {
   justify-content: center;
   align-items: center;
   margin-right: 8px;
+  fill: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-icon {
@@ -871,6 +889,7 @@ ribe-input::placeholder {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  line-height: 1.17;
 }
 
 .privacy-policy {
@@ -883,6 +902,8 @@ ribe-input::placeholder {
 .checkbox:checked + .custom-label-user-checkbox > .custom-checkbox {
   border-color: transparent;
   background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .checkbox:checked + .custom-label-user-checkbox > .custom-checkbox .check-icon {
