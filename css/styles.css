@@ -662,7 +662,6 @@ ribe-input::placeholder {
   height: 40px;
   border: none;
   display: flex;
-  gap: 16px;
   align-self: self-end;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
